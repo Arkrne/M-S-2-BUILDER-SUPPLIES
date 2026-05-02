@@ -2,19 +2,12 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/api/contact",
-      "destination": "/api/contact.js"
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
     },
     {
-      "source": "/(.*)",
-      "destination": "/frontend/$1"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/frontend/index.html",
-      "permanent": false
+      "source": "/((?!api/).*)",
+      "destination": "/index.html"
     }
   ]
 }
