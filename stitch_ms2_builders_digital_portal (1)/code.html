@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MS2 Builder and Supplies Inc. - Heavy Duty Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-high": "#2b2a2a",
+                        "secondary-container": "#454747",
+                        "primary-fixed": "#e5e2e1",
+                        "surface-dim": "#141313",
+                        "on-surface": "#e5e2e1",
+                        "on-tertiary-fixed": "#1d1b1a",
+                        "on-primary-fixed": "#1c1b1b",
+                        "error": "#ffb4ab",
+                        "error-container": "#93000a",
+                        "surface-container-highest": "#353434",
+                        "on-tertiary-container": "#7c7977",
+                        "surface-container": "#201f1f",
+                        "primary": "#c9c6c5",
+                        "on-primary-container": "#7b7979",
+                        "on-secondary": "#2f3131",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-container": "#b4b5b5",
+                        "on-primary-fixed-variant": "#474646",
+                        "tertiary-fixed-dim": "#cac6c3",
+                        "tertiary-container": "#0b0a09",
+                        "surface-variant": "#353434",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "surface-container-lowest": "#0e0e0e",
+                        "secondary-fixed-dim": "#c6c6c7",
+                        "inverse-surface": "#e5e2e1",
+                        "secondary": "#c6c6c7",
+                        "surface-tint": "#c9c6c5",
+                        "inverse-on-surface": "#313030",
+                        "on-surface-variant": "#c4c7c7",
+                        "on-tertiary": "#32302f",
+                        "tertiary-fixed": "#e6e1df",
+                        "on-tertiary-fixed-variant": "#484645",
+                        "outline-variant": "#444748",
+                        "outline": "#8e9192",
+                        "inverse-primary": "#5f5e5e",
+                        "background": "#141313",
+                        "tertiary": "#cac6c3",
+                        "secondary-fixed": "#e2e2e2",
+                        "primary-container": "#0a0a0a",
+                        "surface-container-low": "#1c1b1b",
+                        "on-secondary-fixed-variant": "#454747",
+                        "surface": "#141313",
+                        "surface-bright": "#3a3939",
+                        "on-secondary-fixed": "#1a1c1c",
+                        "on-primary": "#313030",
+                        "on-error": "#690005",
+                        "on-background": "#e5e2e1",
+                        "deep-industrial-blue": "#1D3557"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "stack-lg": "32px",
+                        "stack-sm": "4px",
+                        "stack-md": "16px",
+                        "stack-xl": "64px",
+                        "margin": "40px",
+                        "gutter": "16px",
+                        "grid-columns": "12"
+                    },
+                    "fontFamily": {
+                        "display": ["Inter", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"],
+                        "headline-lg": ["Inter", "sans-serif"],
+                        "label-mono": ["monospace"],
+                        "label-bold": ["Inter", "sans-serif"],
+                        "headline-md": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "display": ["96px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "headline-lg": ["64px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-mono": ["12px", { "lineHeight": "1.0", "letterSpacing": "0", "fontWeight": "400" }],
+                        "label-bold": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #0A0A0A; color: white; }
+        .bg-safety-red { background-color: #ff0000; }
+        .text-safety-red { color: #ff0000; }
+        .border-safety-red { border-color: #ff0000; }
+        .bg-deep-blue { background-color: #2962ff; }
+        .text-deep-blue { color: #2962ff; }
+        .border-deep-blue { border-color: #2962ff; }
+        .grid-bg { background-image: linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 40px 40px; }
+        .border-white-1 { border: 1px solid white; }
+        .border-b-white-1 { border-bottom: 1px solid white; }
+        .border-t-white-1 { border-top: 1px solid white; }
+        .border-r-white-1 { border-right: 1px solid white; }
+        .border-l-white-1 { border-left: 1px solid white; }
+        /* Marquee Animation */
+        @keyframes marquee { 0% { transform: translateX(0%); } 100% { transform: translateX(-50%); } }
+        .animate-marquee { display: flex; width: 200%; animation: marquee 20s linear infinite; }
+        .animate-marquee-content { display: flex; width: 50%; justify-content: space-around; }
+    </style>
+</head>
+<body class="font-body-md text-body-md antialiased overflow-x-hidden selection:bg-safety-red selection:text-white">
+<!-- SECTION 1: STICKY NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-[#0a0a0a] border-b border-white flex justify-between items-center px-8 h-16 w-full max-w-none">
+<div class="text-xl font-black tracking-tighter text-white flex items-center">
+<span class="text-deep-blue">M</span>S<span class="text-deep-blue">2</span> <span class="ml-2">BUILDER &amp; SUPPLIES INC.</span>
+</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-white hover:text-[#ff0000] transition-colors font-inter uppercase tracking-tighter font-bold text-sm" href="#construction">Construction</a>
+<a class="text-white hover:text-[#ff0000] transition-colors font-inter uppercase tracking-tighter font-bold text-sm" href="#rentals">Rentals</a>
+<a class="text-white hover:text-[#ff0000] transition-colors font-inter uppercase tracking-tighter font-bold text-sm" href="#supplies">Supplies</a>
+<a class="text-white hover:text-[#ff0000] transition-colors font-inter uppercase tracking-tighter font-bold text-sm" href="#about">About</a>
+</div>
+<a class="hidden md:inline-block bg-[#0a0a0a] text-[#ff0000] border border-[#ff0000] px-4 py-2 font-inter uppercase tracking-tighter font-bold text-sm hover:bg-[#ff0000] hover:text-white transition-colors" href="#contact">GET A QUOTE</a>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-white hover:text-safety-red transition-colors focus:outline-none">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; font-size: 24px;">menu</span>
+</button>
+</nav>
+<!-- Bottom Nav for Mobile -->
+<div class="md:hidden fixed bottom-0 w-full z-40 bg-surface-container border-t border-surface-container-highest flex justify-around items-center h-16 shadow-lg">
+<a class="flex flex-col items-center justify-center w-full h-full text-on-surface hover:text-safety-red transition-colors" href="#construction">
+<span class="material-symbols-outlined" style="font-size: 20px;">foundation</span>
+<span class="text-[10px] uppercase font-bold mt-1 tracking-tighter">Construct</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full h-full text-on-surface hover:text-safety-red transition-colors" href="#rentals">
+<span class="material-symbols-outlined" style="font-size: 20px;">front_loader</span>
+<span class="text-[10px] uppercase font-bold mt-1 tracking-tighter">Rentals</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full h-full text-on-surface hover:text-safety-red transition-colors" href="#supplies">
+<span class="material-symbols-outlined" style="font-size: 20px;">hardware</span>
+<span class="text-[10px] uppercase font-bold mt-1 tracking-tighter">Supplies</span>
+</a>
+</div>
+<!-- SECTION 2: HERO -->
+<header class="relative w-full h-screen flex items-center bg-background overflow-hidden border-b-white-1 mt-16 md:mt-0">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/70 z-10"></div>
+<img alt="" class="w-full h-full object-cover object-center grayscale opacity-60" data-alt="A wide, dramatic photograph of heavy construction machinery, specifically a yellow excavator and a bulldozer, parked on a rugged, dusty construction site at dawn. The scene is rendered in an industrial modernist style, with high-contrast, moody lighting emphasizing the geometric shapes and mechanical textures of the equipment against a dark, dramatic sky. The color palette is dominated by deep blacks, charcoal greys, and stark whites, with aggressive pops of industrial safety yellow and red. The overall mood is powerful, functional, and intensely professional, reflecting immense capability and scale." src="https://lh3.googleusercontent.com/aida/ADBb0uhI9ZU2PX9pF7PqA6MWbk-uf5P3ePfGwFvVFZxgmT9Rq_iHaZ_EKNOWgtYtTDzU1667nU-R02C3y5cBPCpy7P7v19lth9UhcoTxm8sKXCC4jHhLot3DXJdsSkje6yQpIQrzL7ay1nRzJbDEdrkaJqiMfvrXPE5JEs1i5RGS2k0gM97EM5IeNTH05mfxj4Xp9CAxVjYcWEfsoc4hGznccTZYuFA8cjagq78s4AOnydHA-xS1L8pEI5xPviNIImXODS0TvIU2zMCCYL4"/>
+</div>
+<div class="relative z-20 container mx-auto px-8 md:px-margin grid grid-cols-12 gap-gutter">
+<div class="col-span-12 md:col-span-10 lg:col-span-8">
+<h1 class="font-display text-display text-white mb-stack-md uppercase leading-[0.9] tracking-tighter border-l-4 border-safety-red pl-4">
+                    Heavy Duty<br/>Solutions<br/>For Catanduanes.
+                </h1>
+<p class="font-body-lg text-body-lg text-secondary mb-stack-lg max-w-2xl border-l-white-1 pl-4 ml-1">
+                    Premium construction services, heavy equipment rentals, and bulk hardware supplies based in Virac. Built on trust, driven by precision.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 ml-1">
+<a class="bg-safety-red text-white font-label-bold text-label-bold px-8 py-4 uppercase tracking-widest hover:bg-white hover:text-safety-red transition-colors inline-flex items-center justify-center border border-safety-red hover:border-white" href="#contact">
+                        Contact Us Now
+                        <span class="material-symbols-outlined ml-2" style="font-size: 16px;">arrow_forward</span>
+</a>
+<a class="bg-transparent text-white border-white-1 font-label-bold text-label-bold px-8 py-4 uppercase tracking-widest hover:bg-white hover:text-background transition-colors inline-flex items-center justify-center" href="#services">
+                        Explore Services
+                    </a>
+</div>
+</div>
+</div>
+</header>
+<!-- SECTION 3: TRUST MARQUEE -->
+<div class="w-full bg-surface-container-highest border-b-white-1 py-4 overflow-hidden relative">
+<div class="animate-marquee font-label-mono text-label-mono text-on-surface tracking-[0.2em] uppercase">
+<div class="animate-marquee-content">
+<span class="flex items-center"><span class="w-2 h-2 bg-safety-red mr-3"></span> FULLY ACCREDITED</span>
+<span class="flex items-center"><span class="w-2 h-2 bg-deep-blue mr-3"></span> PCAB REGISTERED</span>
+<span class="flex items-center"><span class="w-2 h-2 bg-white mr-3"></span> DTI CERTIFIED</span>
+<span class="flex items-center"><span class="w-2 h-2 bg-safety-red mr-3"></span> LOCAL LGU PARTNER</span>
+</div>
+<div class="animate-marquee-content">
+<span class="flex items-center"><span class="w-2 h-2 bg-safety-red mr-3"></span> FULLY ACCREDITED</span>
+<span class="flex items-center"><span class="w-2 h-2 bg-deep-blue mr-3"></span> PCAB REGISTERED</span>
+<span class="flex items-center"><span class="w-2 h-2 bg-white mr-3"></span> DTI CERTIFIED</span>
+<span class="flex items-center"><span class="w-2 h-2 bg-safety-red mr-3"></span> LOCAL LGU PARTNER</span>
+</div>
+</div>
+</div>
+<!-- MAIN CONTENT WRAPPER -->
+<main class="w-full bg-background grid-bg pb-32">
+<!-- SECTION 4: CORE SERVICES -->
+<section class="pt-24 px-8 md:px-margin container mx-auto" id="services">
+<div class="border-b-white-1 pb-stack-md mb-stack-lg flex flex-col md:flex-row justify-between items-end">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-tighter">
+<span class="text-safety-red mr-4">01 //</span> Engineering &amp; Construction
+                </h2>
+<div class="text-right mt-4 md:mt-0 font-label-mono text-label-mono text-secondary uppercase tracking-widest">
+                    Structural Integrity Guaranteed
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 border-l-white-1 border-t-white-1">
+<!-- Service 1 -->
+<div class="border-r-white-1 border-b-white-1 p-8 group hover:bg-surface-container-high transition-colors relative overflow-hidden flex flex-col">
+<div class="w-full h-48 mb-6 overflow-hidden">
+<img alt="Residential frame construction" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN9dNZro_urDCKYRguAlj8PZK8FrJhin9SqFTsTX2wH8ZbURvasvvH5Gnzee86gxl3-rsYcXPYP_WNvDitImUWbyAsLh_2i6YxRTI0TfcR4iXCXP15cN8bmzaKAIHvDHSBi1w_P0Jj8j9pj7SmpKlw8406srtHHU1LW_TTAO5igAAdRevNQuegLzazsSnWhC7V0n5PUZ3jgkFJU_Ppri_SpALtgXhY3HXSTBWLvHhGEi9dyVslrsEjmMmyoeV-kfco2gsTJ9KTRIhu"/>
+</div>
+<div class="w-12 h-1 bg-safety-red mb-6"></div>
+<h3 class="font-headline-md text-headline-md text-white mb-4 uppercase tracking-tight">Residential</h3>
+<p class="font-body-md text-body-md text-secondary mb-8 h-24">Precision-engineered residential builds, from custom homes to multi-unit complexes, ensuring lasting durability.</p>
+<a class="inline-flex items-center font-label-bold text-label-bold text-white group-hover:text-safety-red uppercase tracking-widest transition-colors mt-auto" href="#">
+                        View Projects <span class="material-symbols-outlined ml-2" style="font-size: 16px;">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="border-r-white-1 border-b-white-1 p-8 group hover:bg-surface-container-high transition-colors relative overflow-hidden flex flex-col">
+<div class="w-full h-48 mb-6 overflow-hidden">
+<img alt="Commercial building construction" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjzs5SzahF-OiaeUjnVyjWHPIip9HSyGimBVgtdxacVfPcW5uZtGLUOVuw-QKJGxxirSAKvvkvWGw4ZGHCSmB1gkkOa0DhOV6oSNp40Ozdsfz2xvGwbtBRDjWl-DXHHTr-G0iNsKN05OnVpmd_wKuAkGcu_3llqgOU8yzOUn0mhMnlI1-kvglwdiJJITJDS2QDB8uDyvwh-U1H8AXMZEkvJeliRThxy3KjM5PYfUY4sHy6GVElGdtopCxWExDcTki2dpXDkQJBWeVg"/>
+</div>
+<div class="w-12 h-1 bg-deep-blue mb-6"></div>
+<h3 class="font-headline-md text-headline-md text-white mb-4 uppercase tracking-tight">Commercial</h3>
+<p class="font-body-md text-body-md text-secondary mb-8 h-24">Scalable commercial construction delivering functional, high-performance facilities for robust business operations.</p>
+<a class="inline-flex items-center font-label-bold text-label-bold text-white group-hover:text-deep-blue uppercase tracking-widest transition-colors mt-auto" href="#">
+                        View Projects <span class="material-symbols-outlined ml-2" style="font-size: 16px;">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="border-r-white-1 border-b-white-1 p-8 group hover:bg-surface-container-high transition-colors relative overflow-hidden flex flex-col">
+<div class="w-full h-48 mb-6 overflow-hidden">
+<img alt="Road construction works" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPDKOzVF7S4ZszEACdpQJUSvM6sF2WFfNICqgQev38qSE0ldTTzr-KbCqpcCaTmlmRRuTmXQw80cXhaBplJD4D1Slwlzo-haDYxIZJ0phbQaSkh-t17o78UJSyGiJc6afk-OPFCm3bp4Qvy_ktOMK2U3Bk7uTeJ825oZlFj_td-UOPG51GI47KYd3o28NDH_0CgRkRJyE3fqpY2G_J7IIw5Wswywf0Vh8DXinZhH0Nyu0ejeOt3RIxz4k-vke1ewSnlTmQNy8_Ne_9"/>
+</div>
+<div class="w-12 h-1 bg-white mb-6"></div>
+<h3 class="font-headline-md text-headline-md text-white mb-4 uppercase tracking-tight">Road Works</h3>
+<p class="font-body-md text-body-md text-secondary mb-8 h-24">Heavy-duty infrastructure development, including paving, grading, and civil engineering projects.</p>
+<a class="inline-flex items-center font-label-bold text-label-bold text-white group-hover:text-white uppercase tracking-widest transition-colors mt-auto" href="#">
+                        View Projects <span class="material-symbols-outlined ml-2" style="font-size: 16px;">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- NEW SECTION: THE BLUEPRINT -->
+<section class="pt-32 px-8 md:px-margin container mx-auto">
+<div class="border-b-white-1 pb-stack-md mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-tighter">
+<span class="text-white mr-4">02 //</span> THE BLUEPRINT
+                </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 border-l-white-1 border-t-white-1">
+<div class="border-r-white-1 border-b-white-1 p-8 relative">
+<div class="font-label-mono text-safety-red mb-4 text-xl tracking-widest">01</div>
+<h3 class="font-headline-md text-white uppercase tracking-tight mb-4">SITE ASSESSMENT &amp; LOGISTICS</h3>
+</div>
+<div class="border-r-white-1 border-b-white-1 p-8 relative">
+<div class="font-label-mono text-deep-blue mb-4 text-xl tracking-widest">02</div>
+<h3 class="font-headline-md text-white uppercase tracking-tight mb-4">MATERIAL PROCUREMENT &amp; STAGING</h3>
+</div>
+<div class="border-r-white-1 border-b-white-1 p-8 relative">
+<div class="font-label-mono text-white mb-4 text-xl tracking-widest">03</div>
+<h3 class="font-headline-md text-white uppercase tracking-tight mb-4">HEAVY-DUTY EXECUTION</h3>
+</div>
+<div class="border-r-white-1 border-b-white-1 p-8 relative">
+<div class="font-label-mono text-secondary mb-4 text-xl tracking-widest">04</div>
+<h3 class="font-headline-md text-white uppercase tracking-tight mb-4">QUALITY ASSURANCE &amp; TURNOVER</h3>
+</div>
+</div>
+</section>
+<!-- SECTION 5: THE ARSENAL -->
+<section class="pt-32 px-8 md:px-margin container mx-auto" id="rentals">
+<div class="border-b-white-1 pb-stack-md mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-tighter">
+<span class="text-deep-blue mr-4">03 //</span> Heavy Equipment Fleet
+                </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-0 border-white-1">
+<!-- Fleet Card 1 -->
+<div class="md:col-span-4 border-b-white-1 md:border-b-0 md:border-r-white-1 bg-surface group">
+<div class="h-64 bg-surface-container flex items-center justify-center border-b-white-1 relative overflow-hidden">
+<img alt="Backhoe Excavator" class="w-full h-full object-cover grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYIoc5UgK8NNppOO-TDuK60gc5fi2Z8r_uRNFxD4CaF0b5V-ZlEhJsHnzw-XSPd-YfqGauTOOtJGPEwWTfSr5IXZQR6agP6Vz48RMIvs5tLS4hJTClnr_VOTi7Fa_U-F78yaIoboikCWclaQGS1aosYYn5ji70gnKvILdsWgGFTJ3y2aEoBHGj907K_mjCDkH4RUOxLiJNaOQGJmOSZaQ1znXKeUyGzUQCHqvMgO4cjwmFy-t_jdpUeAP3EfQFVAAzKw_744QcFAWC"/>
+<div class="absolute top-2 right-2 border border-white px-2 py-1 font-label-mono text-label-mono text-white text-[10px] bg-black/50 z-10">AVAIL: 4 UNITS</div>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-white uppercase tracking-tight mb-2">Backhoe Excavators</h4>
+<div class="font-label-mono text-label-mono text-secondary uppercase mb-6 tracking-widest border-l-2 border-deep-blue pl-2">CAT 320 / KOMATSU PC200</div>
+<a class="block w-full text-center border-white-1 py-3 font-label-bold text-label-bold uppercase text-white hover:bg-white hover:text-background transition-colors" href="#contact">Request Availability</a>
+</div>
+</div>
+<!-- Fleet Card 2 -->
+<div class="md:col-span-4 border-b-white-1 md:border-b-0 md:border-r-white-1 bg-surface group">
+<div class="h-64 bg-surface-container flex items-center justify-center border-b-white-1 relative overflow-hidden">
+<img alt="Wheel Loader" class="w-full h-full object-cover grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbv_3vI8EUgnh-tXHZKfn1kOMXHtrBzPmDL4oTMmU9svS_yR0ibdMeVRZmALkJnaY6Om1irQ10eOLdUTfnCH5oVzfhZXTE-Wo97x3OdMOhACxcrxu6D0mkoBp2lRyMvMDFW8wERummOHEACufRb4yXi-_-HYX_OlrNsyL65H9nLHNpmLjv2A1_f_5NZ42Ps3WS9yMHLyTly45pE_zfARxKk1M88zrRpYKT71HUEPntoEQ5JrdvKPajGUlY1lumCuk4Ue023Y579p0n"/>
+<div class="absolute top-2 right-2 border border-white px-2 py-1 font-label-mono text-label-mono text-white text-[10px] bg-black/50 z-10">AVAIL: 2 UNITS</div>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-white uppercase tracking-tight mb-2">Wheel Loaders</h4>
+<div class="font-label-mono text-label-mono text-secondary uppercase mb-6 tracking-widest border-l-2 border-safety-red pl-2">CAT 950 / VOLVO L120</div>
+<a class="block w-full text-center border-white-1 py-3 font-label-bold text-label-bold uppercase text-white hover:bg-white hover:text-background transition-colors" href="#contact">Request Availability</a>
+</div>
+</div>
+<!-- Fleet Card 3 -->
+<div class="md:col-span-4 bg-surface group">
+<div class="h-64 bg-surface-container flex items-center justify-center border-b-white-1 relative overflow-hidden">
+<img alt="Dump Truck" class="w-full h-full object-cover grayscale opacity-70 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATT8-7EHxx9bWxbVKj83ugawPOLzZd_pow7HyJMMOw_w18A4Y_0sFPvzamJjCci3MLpqtVlalUnlxEDMV84dNYLAn65HRRCVOH0GbZQdhBhKagBtt1QtbvR04eObGWAV9kmNQn0yFaXJgIJbeEbuxUpwCky-Fmrq79MTGt1CWMhbY3ghbomSVZfhzSfGuyYlsiJyNgO4vo2tvJX6mVTdGf2jEwcMvo8att3rsAC5AvrFszfBSJJ8vKBuiEkkg12Ff6hz7zso-BH9GH"/>
+<div class="absolute top-2 right-2 border border-white px-2 py-1 font-label-mono text-label-mono text-white text-[10px] bg-black/50 z-10">AVAIL: 8 UNITS</div>
+</div>
+<div class="p-6">
+<h4 class="font-headline-md text-headline-md text-white uppercase tracking-tight mb-2">Dump Trucks</h4>
+<div class="font-label-mono text-label-mono text-secondary uppercase mb-6 tracking-widest border-l-2 border-white pl-2">ISUZU 10-WHEELER / FUSO</div>
+<a class="block w-full text-center border-white-1 py-3 font-label-bold text-label-bold uppercase text-white hover:bg-white hover:text-background transition-colors" href="#contact">Request Availability</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: THE INVENTORY (Bento Grid Style) -->
+<section class="pt-32 px-8 md:px-margin container mx-auto" id="supplies">
+<div class="border-b-white-1 pb-stack-md mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-tighter">
+<span class="text-white mr-4">04 //</span> Hardware &amp; Supplies
+                </h2>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-0 border-white-1 border-b-0">
+<!-- Main Featured Item -->
+<div class="md:col-span-8 border-b-white-1 border-r-white-1 bg-surface p-8 relative flex flex-col justify-end min-h-[400px] overflow-hidden group">
+<!-- Geometric bg element -->
+<div class="absolute top-0 right-0 w-64 h-64 border-l-white-1 border-b-white-1 opacity-20 transform translate-x-1/2 -translate-y-1/2 rotate-45 group-hover:opacity-40 transition-opacity"></div>
+<div class="absolute top-8 right-8">
+<span class="material-symbols-outlined text-[48px] text-safety-red">foundation</span>
+</div>
+<div class="relative z-10">
+<div class="inline-block bg-safety-red text-white font-label-mono text-[10px] uppercase px-2 py-1 mb-4 tracking-widest">Bulk Supply Available</div>
+<h3 class="font-headline-lg text-[48px] leading-none text-white uppercase tracking-tighter mb-4">Cement &amp; Aggregates</h3>
+<p class="font-body-lg text-secondary max-w-md mb-8">Premium grade Portland cement, sand, gravel, and base course materials sourced for massive structural requirements.</p>
+<div class="flex gap-4 font-label-mono text-secondary uppercase text-[10px] tracking-widest border-t-white-1 pt-4">
+<span>PORTLAND TYPE 1</span>
+<span>•</span>
+<span>CRUSHED GRAVEL</span>
+<span>•</span>
+<span>WASHED SAND</span>
+</div>
+</div>
+</div>
+<!-- Secondary Item Top -->
+<div class="md:col-span-4 border-b-white-1 bg-surface p-8 flex flex-col justify-between group">
+<div class="flex justify-between items-start mb-8">
+<span class="material-symbols-outlined text-[32px] text-deep-blue">hardware</span>
+<div class="border border-white px-2 py-1 font-label-mono text-[10px] text-white">INDUSTRIAL</div>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-white uppercase tracking-tight mb-2">Steel &amp; Metals</h3>
+<p class="font-body-md text-secondary mb-4">Rebars, structural steel beams, angular bars, and corrugated roofing sheets.</p>
+<a class="text-white hover:text-deep-blue font-label-bold uppercase tracking-widest text-[10px] border-b border-transparent hover:border-deep-blue transition-all pb-1 inline-block" href="#">View Specs &gt;</a>
+</div>
+</div>
+<!-- Secondary Item Bottom -->
+<div class="md:col-span-12 border-b-white-1 bg-surface p-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-center group">
+<div class="col-span-1 flex items-center border-r-white-1 pr-8">
+<span class="material-symbols-outlined text-[48px] text-white mr-6">construction</span>
+<h3 class="font-headline-md text-headline-md text-white uppercase tracking-tight m-0 leading-tight">Finishing &amp; Tools</h3>
+</div>
+<div class="col-span-2 flex flex-wrap gap-4 font-label-mono text-secondary uppercase text-[12px] tracking-widest">
+<span class="border border-secondary px-4 py-2 hover:bg-white hover:text-background transition-colors cursor-default">POWER TOOLS</span>
+<span class="border border-secondary px-4 py-2 hover:bg-white hover:text-background transition-colors cursor-default">PAINTS &amp; COATINGS</span>
+<span class="border border-secondary px-4 py-2 hover:bg-white hover:text-background transition-colors cursor-default">PLUMBING FIXTURES</span>
+<span class="border border-secondary px-4 py-2 hover:bg-white hover:text-background transition-colors cursor-default">ELECTRICAL SUPPLIES</span>
+</div>
+</div>
+</div>
+</section>
+<!-- NEW SECTION: PROVEN TRACK RECORD -->
+<section class="pt-32 px-8 md:px-margin container mx-auto">
+<div class="border-b-white-1 pb-stack-md mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-tighter">
+<span class="text-white mr-4">05 //</span> PROVEN TRACK RECORD
+                </h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 border-l-white-1 border-t-white-1 p-8">
+<div class="lg:col-span-4 flex flex-col justify-center space-y-12 pr-8">
+<div>
+<div class="font-display text-5xl text-safety-red mb-2 font-bold tracking-tighter">15+</div>
+<div class="font-label-mono text-white uppercase tracking-widest">Years Combined Experience</div>
+</div>
+<div>
+<div class="font-display text-5xl text-deep-blue mb-2 font-bold tracking-tighter">100+</div>
+<div class="font-label-mono text-white uppercase tracking-widest">Projects Completed</div>
+</div>
+<div>
+<div class="font-display text-5xl text-white mb-2 font-bold tracking-tighter">ZERO</div>
+<div class="font-label-mono text-white uppercase tracking-widest">Compromise on Quality</div>
+</div>
+</div>
+<div class="lg:col-span-8 grid grid-cols-2 gap-4">
+<img alt="Construction Site 1" class="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtN8PYgwqYlX-F8XcHvnTr_wb1zMzXN7nozWv-KuLDph43ADhCthuL4FEqzrluRVU6TUWXm16Gr7EPXDWBQqPl_5NcoCFlCnh7nr6PyDwQegmzrTkMRke5JGft3NzEdJk7T8_zonj--YfqR7UWpUTsMv8tIlHtZrLrjBvB6KImEUYuTWt9tjzW-HGD6VQCGDZWmm9RLFL7iAbw1ybKQSsmDUV1ufzhWGBQTVz_kE3OdhJIbhdnXSSU4SlU2FnMYQXSwkHPImnoJsS2"/>
+<img alt="Construction Site 2" class="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpCJc_fvdiNDSRPy8q-tM6imzyTh1pCFP5h7W0StAP4bnvZFvEOlX2Kb1Yknu9-ZSvDJZ-wzqEgEn3wRw-PWEHZbGAEK2z0UTEXJCulY4mb10WQ7EblecEPXsHKxK3Dhcv4JtYwyWZ1EK6uy1QRBtFYZ3TOjiMs63sjRS3ht2KvIZXyVFIrcDVrewK86noxogAPw1NfUjDMi66DZQLqoJzYB9-sYoA1CC9bEMtzQMtm-UKieWUZLa-ickS5PhM7W6NzfinDdzw6xoA"/>
+<img alt="Construction Site 3" class="w-full h-64 object-cover grayscale hover:grayscale-0 transition-all duration-500 col-span-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8DAuclYJumQr1kLLa8w9JEDitM_ltoFNMu9n6G8YKgZsRoyE5ExBxtwflEBfHUQXAl7iBThs0WxCkCReboTGG3STD1UwMlnxAFX0QCCfC9A0PnelTsYTXcQb-f9JOAN1Ju1jwGH7db0KW4x--QbEYr1SLDjdy7-jePD06Cauv_X1jsQwalzZnhA8Lvm5-Q-JNtPlgUt3RggZ614xJxm-Y0ZHpj0Q0mGcwh7rdPb8rkeNrFkeP3f1MR7fPN80im5OMg185LskSJUdk"/>
+</div>
+</div>
+</section>
+<!-- NEW SECTION: UNCOMPROMISING SAFETY -->
+<section class="mt-32 w-full bg-deep-industrial-blue py-24">
+<div class="container mx-auto px-8 md:px-margin text-center max-w-4xl">
+<h2 class="font-headline-lg text-headline-lg text-white uppercase tracking-tighter mb-8">
+                06 // STRICT SAFETY PROTOCOLS
+            </h2>
+<p class="font-body-lg text-xl text-white opacity-90 leading-relaxed uppercase tracking-wide">
+                We operate our machinery and manage our sites with an ironclad commitment to the safety of our crew, your property, and the public. Fully insured, fully compliant.
+            </p>
+</div>
+</section>
+<!-- SECTION 7: THE CONVERSION HUB -->
+<section class="pt-32 pb-16 px-8 md:px-margin container mx-auto" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-2 border-white-1 bg-surface">
+<!-- Left: Minimalist Form -->
+<div class="p-8 md:p-16 border-b-white-1 lg:border-b-0 lg:border-r-white-1">
+<h2 class="font-headline-md text-headline-md text-white uppercase tracking-tight mb-8 flex items-center">
+<span class="w-4 h-4 bg-safety-red mr-4 inline-block"></span>
+                        Initiate Request
+                    </h2>
+<form class="space-y-8">
+<div>
+<label class="block font-label-mono text-secondary uppercase tracking-widest text-[10px] mb-2">Full Name / Company</label>
+<input class="w-full bg-transparent border-0 border-b-white-1 focus:ring-0 focus:border-safety-red text-white font-body-lg px-0 py-2 rounded-none transition-colors" placeholder="Enter details..." type="text"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<label class="block font-label-mono text-secondary uppercase tracking-widest text-[10px] mb-2">Phone Number</label>
+<input class="w-full bg-transparent border-0 border-b-white-1 focus:ring-0 focus:border-safety-red text-white font-body-lg px-0 py-2 rounded-none transition-colors" placeholder="+63 9XX XXX XXXX" type="tel"/>
+</div>
+<div>
+<label class="block font-label-mono text-secondary uppercase tracking-widest text-[10px] mb-2">Inquiry Category</label>
+<select class="w-full bg-transparent border-0 border-b-white-1 focus:ring-0 focus:border-safety-red text-secondary focus:text-white font-body-lg px-0 py-2 rounded-none transition-colors appearance-none">
+<option class="bg-background text-white">Construction Services</option>
+<option class="bg-background text-white">Equipment Rental</option>
+<option class="bg-background text-white">Hardware Supplies</option>
+<option class="bg-background text-white">General Inquiry</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-mono text-secondary uppercase tracking-widest text-[10px] mb-2">Project Specifications</label>
+<textarea class="w-full bg-transparent border-0 border-b-white-1 focus:ring-0 focus:border-safety-red text-white font-body-lg px-0 py-2 rounded-none transition-colors resize-none" placeholder="Describe your requirements..." rows="3"></textarea>
+</div>
+<button class="w-full bg-safety-red text-white font-label-bold text-label-bold py-6 uppercase tracking-widest hover:bg-white hover:text-safety-red transition-colors border border-safety-red hover:border-white" type="button">
+                            Send Message
+                        </button>
+</form>
+</div>
+<!-- Right: Contact Info -->
+<div class="p-8 md:p-16 flex flex-col justify-center bg-surface-container-high relative overflow-hidden">
+<!-- Blueprint texture overlay -->
+<div class="absolute inset-0 opacity-5 grid-bg z-0 pointer-events-none"></div>
+<div class="relative z-10">
+<h2 class="font-display text-[48px] md:text-[64px] leading-[0.9] text-white uppercase tracking-tighter mb-12 border-l-4 border-deep-blue pl-6">
+                            Built On Trust.<br/>Based In Virac.
+                        </h2>
+<div class="space-y-8 font-body-lg">
+<div class="flex items-start group">
+<span class="material-symbols-outlined text-deep-blue mr-6 mt-1 group-hover:text-white transition-colors">phone_iphone</span>
+<div>
+<div class="font-label-mono text-[10px] text-secondary uppercase tracking-widest mb-1">Direct Line</div>
+<div class="text-white tracking-wider">0917 166 4315</div>
+</div>
+</div>
+<div class="flex items-start group">
+<span class="material-symbols-outlined text-deep-blue mr-6 mt-1 group-hover:text-white transition-colors">mail</span>
+<div>
+<div class="font-label-mono text-[10px] text-secondary uppercase tracking-widest mb-1">Electronic Mail</div>
+<div class="text-white tracking-wider uppercase">ms2builder@gmail.com</div>
+</div>
+</div>
+<div class="flex items-start group">
+<span class="material-symbols-outlined text-deep-blue mr-6 mt-1 group-hover:text-white transition-colors">location_on</span>
+<div>
+<div class="font-label-mono text-[10px] text-secondary uppercase tracking-widest mb-1">Headquarters</div>
+<div class="text-white tracking-wider uppercase">Purok 3 Brgy. Bigaa,<br/>Virac, Catanduanes</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- SECTION 8: FOOTER -->
+<footer class="bg-[#0a0a0a] w-full border-t border-white-1 relative z-10 pt-16 pb-24 md:pb-8">
+<div class="container mx-auto px-8 md:px-margin">
+<!-- Top Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Column 1: Brand & Socials -->
+<div class="space-y-6">
+<div class="text-xl font-black tracking-tighter text-white flex items-center">
+<span class="text-deep-blue">M</span>S<span class="text-deep-blue">2</span> <span class="ml-2 uppercase">BUILDER &amp; SUPPLIES INC.</span>
+</div>
+<p class="text-secondary font-body-md text-sm leading-relaxed max-w-xs uppercase tracking-tight">
+          Providing heavy-duty engineering solutions and bulk hardware supplies for the islands of Catanduanes.
+        </p>
+<div class="flex space-x-4">
+<a class="text-secondary hover:text-safety-red transition-colors" href="#"><span class="material-symbols-outlined" style="font-size: 20px;">facebook</span></a>
+<a class="text-secondary hover:text-safety-red transition-colors" href="#"><span class="material-symbols-outlined" style="font-size: 20px;">photo_camera</span></a>
+<a class="text-secondary hover:text-safety-red transition-colors" href="#"><span class="material-symbols-outlined" style="font-size: 20px;">alternate_email</span></a>
+<a class="text-secondary hover:text-safety-red transition-colors" href="#"><span class="material-symbols-outlined" style="font-size: 20px;">code</span></a>
+<a class="text-secondary hover:text-safety-red transition-colors" href="#"><span class="material-symbols-outlined" style="font-size: 20px;">palette</span></a>
+</div>
+</div>
+<!-- Column 2: About Us -->
+<div>
+<h4 class="font-label-mono text-white uppercase tracking-widest text-xs mb-8 border-l-2 border-safety-red pl-3">About Us</h4>
+<ul class="space-y-4 font-label-bold text-xs uppercase tracking-widest text-secondary">
+<li><a class="hover:text-white transition-colors" href="#">Company History</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Meet the Team</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Employee Handbook</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<!-- Column 3: Helpful Links & Services -->
+<div>
+<h4 class="font-label-mono text-white uppercase tracking-widest text-xs mb-8 border-l-2 border-deep-blue pl-3">Helpful Links</h4>
+<ul class="space-y-4 font-label-bold text-xs uppercase tracking-widest text-secondary">
+<li><a class="hover:text-white transition-colors" href="#">FAQs</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Support</a></li>
+<li class="flex items-center group">
+<a class="hover:text-white transition-colors mr-2" href="#">Live Chat</a>
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-safety-red opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-safety-red"></span>
+</span>
+</li>
+<li><a class="hover:text-white transition-colors" href="#">Marketing &amp; Ads</a></li>
+</ul>
+</div>
+<!-- Column 4: Contact Us -->
+<div>
+<h4 class="font-label-mono text-white uppercase tracking-widest text-xs mb-8 border-l-2 border-white pl-3">Contact Us</h4>
+<ul class="space-y-4 font-label-bold text-xs uppercase tracking-widest text-secondary">
+<li class="flex items-start">
+<span class="material-symbols-outlined text-xs mr-3 mt-0.5">mail</span>
+<a class="hover:text-white transition-colors lowercase" href="mailto:hello@mvpblocks.com">hello@mvpblocks.com</a>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-xs mr-3 mt-0.5">call</span>
+<span>+91 8637373116</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined text-xs mr-3 mt-0.5">location_on</span>
+<span>Kolkata, West Bengal, India</span>
+</li>
+</ul>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="border-t border-white-1 pt-8 flex flex-col md:flex-row justify-between items-center">
+<div class="font-label-mono text-[10px] tracking-widest uppercase text-slate-500 mb-4 md:mb-0">
+        © 2026 MS2 BUILDER AND SUPPLIES INC. ALL RIGHTS RESERVED.
+      </div>
+<div class="flex space-x-8 font-label-mono text-[10px] tracking-widest uppercase">
+<a class="text-slate-500 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-white transition-colors" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-white transition-colors" href="#">Compliance</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
