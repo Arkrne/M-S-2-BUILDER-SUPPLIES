@@ -228,7 +228,23 @@
         </nav>
     </div>
 </div>
-<main class="pt-[80px]">
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          spacing: {
+            nav: "var(--nav-height)",
+            xs: "var(--spacing-xs)",
+            /* ... */
+          },
+          /* ... */
+        }
+      }
+    }
+</script>
+<!-- ... later ... -->
+<main class="pt-nav">
 <!-- Hero Section -->
 <section class="relative min-h-[80vh] flex items-center bg-surface-variant overflow-hidden" data-alt="A massive, active construction site bathed in the dramatic, high-contrast light of early morning. Heavy machinery, including yellow excavators and cranes, are silhouetted against a pale sky. The scene conveys industrial power, precision engineering, and structural integrity. The color palette relies on deep shadows, stark concrete greys, and vibrant safety yellows, fitting a professional, modern corporate aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA6mhY-LazWI6vPdyOir8GltS6Cazd_0Fg5DOGF1YBTJAa2GEshowMnO4VK2BEW3MGE6JgT9tYVA9bqkyHLEiAIx-im2Qsqrq2p66pN8jtIfyjWO5yObsmiub_f62J2QLfbxPqiwBtSr_Q2YAL_fi8hEY_Lereikb6rhjth8YzbfqpfJ8bTz57p2NjrVuRe8nqK9xjhOxg_TzRkIwYs1cWE0u5BNZZ5aKLBHBGUtDEiY0DRIueIjcSzW1AmYAzznPi8aE1m7dIY7N9Z'); background-size: cover; background-position: center;">
 <div class="absolute inset-0 bg-inverse-surface/80"></div>
