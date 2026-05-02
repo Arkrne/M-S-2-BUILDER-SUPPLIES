@@ -1,4 +1,5 @@
-import { FC, useState } from 'react';
+import { useState } from 'react';
+import type { FC } from 'react';
 import { Phone, Mail, MapPin, Send, CheckCircle, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Magnetic from './Magnetic';
